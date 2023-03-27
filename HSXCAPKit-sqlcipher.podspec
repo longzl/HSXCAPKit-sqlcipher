@@ -8,12 +8,12 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/longzl/HSXCAPKit-sqlcipher"
   s.license      = "MIT"
   s.author       = { "longzl" => "longzhili2005@126.com" }
-  s.platform     = :ios, "10.0.0"
+  s.platform     = :ios, "11.0.0"
   s.source       = { :git => "https://github.com/longzl/HSXCAPKit-sqlcipher.git", :tag => "v#{s.version}" }
   s.header_mappings_dir = "sqlcipher"
   s.libraries     = "c++","ssl"
   s.source_files  = "sqlcipher/*.{h,c}"
   s.compiler_flags  = '-DSQLITE_HAS_CODEC'
 
-  # s.dependency 'HSXCAPKit-3rdparty-libs', '~> 0.1.0'
+  s.dependency 'HSXCAPKit-3rdparty-libs', '~> 0.1.0'
 end
