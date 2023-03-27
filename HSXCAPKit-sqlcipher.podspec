@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
 
   s.dependency 'HSXCAPKit-3rdparty-libs', '~> 0.1.0'
 
-  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/sqlcipher $(PODS_ROOT)/HSXCAPKit-3rdparty-libs/src" }
+  s.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/sqlcipher $(PODS_ROOT)/HSXCAPKit-3rdparty-libs/src" }
   
 end
