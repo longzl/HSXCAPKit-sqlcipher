@@ -597,7 +597,7 @@
 #define unlikely(X)  (X)
 
 #include "hash.h"
-// #include "parse.h"
+#include <parse.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
