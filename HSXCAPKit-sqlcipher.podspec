@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.compiler_flags  = '-DSQLITE_HAS_CODEC -DSQLCIPHER_CRYPTO_OPENSSL -DSQLITE_TEMP_STORE=2'
   s.requires_arc = false
 
-  s.dependency 'HSXCAPKit-3rdparty-libs', '~> 0.1.0'
+  # s.dependency 'HSXCAPKit-3rdparty-libs', '~> 0.1.0'
 
   # s.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/HSXCAPKit-3rdparty-libs" }
   
