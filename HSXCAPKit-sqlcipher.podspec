@@ -10,9 +10,10 @@ Pod::Spec.new do |s|
   s.author       = { "longzl" => "longzhili2005@126.com" }
   s.platform     = :ios, "11.0.0"
   s.source       = { :git => "https://github.com/longzl/HSXCAPKit-sqlcipher.git", :tag => "v#{s.version}" }
-  s.header_mappings_dir = "sqlcipher"
+  s.header_mappings_dir = "sqlcipher/src"
+  s.public_header_files = 'sqlcipher/src/sqlcipher.h', 'sqlcipher/src/crypto.h', 'sqlcipher/src/sqlite3ext.h'
   s.libraries     = "c++","ssl","crypto"
-  s.source_files  = "sqlcipher/*.{h,c}"
+  s.source_files  = "sqlcipher/src/*.{h,c}"
   s.compiler_flags  = '-DSQLITE_HAS_CODEC'
   s.requires_arc = false
 
