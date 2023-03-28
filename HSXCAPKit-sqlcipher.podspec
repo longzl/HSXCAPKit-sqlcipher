@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.libraries     = "c++","ssl"
   s.source_files  = "sqlcipher/*.{h,c}"
   s.compiler_flags  = '-DSQLITE_HAS_CODEC -DSQLITE_TEMP_STORE=2'
+  s.requires_arc = false
 
   s.dependency 'HSXCAPKit-3rdparty-libs', '~> 0.1.0'
 
