@@ -12,12 +12,11 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/longzl/HSXCAPKit-sqlcipher.git", :tag => "v#{s.version}" }
   s.header_mappings_dir = "sqlcipher"
   s.libraries     = "c++","ssl"
-  # s.libraries     = "c++"
   s.source_files  = "sqlcipher/*.{h,c}"
-  # s.compiler_flags  = '-DSQLITE_HAS_CODEC'
+  s.compiler_flags  = '-DSQLITE_HAS_CODEC --enable-tempstore=yes -DSQLITE_TEMP_STORE=2'
 
   s.dependency 'HSXCAPKit-3rdparty-libs', '~> 0.1.0'
 
-  s.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/HSXCAPKit-3rdparty-libs" }
+  # s.pod_target_xcconfig = { "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/HSXCAPKit-3rdparty-libs" }
   
 end
