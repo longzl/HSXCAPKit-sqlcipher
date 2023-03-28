@@ -8,5 +8,9 @@ git tag -d ${VERSION}
 git tag ${VERSION}
 git push --tags
 
+export PATH=/Users/longzl/code/git/Build-OpenSSL-cURL/archive/libcurl-7.84.0-openssl-1.1.1p-nghttp2-NONE/bin:$PATH
+export LDFLAGS="-L/Users/longzl/code/git/Build-OpenSSL-cURL/archive/libcurl-7.84.0-openssl-1.1.1p-nghttp2-NONE/lib/iOS"
+export CPPFLAGS="-I/Users/longzl/code/git/Build-OpenSSL-cURL/archive/libcurl-7.84.0-openssl-1.1.1p-nghttp2-NONE/include/openssl"
+
 pod cache clean ${NAME}
 pod repo push hsxorg *.podspec --use-libraries --allow-warnings --skip-import-validation --sources='https://github.com/longzl/PodSpec.git,https://github.com/CocoaPods/Specs.git'
