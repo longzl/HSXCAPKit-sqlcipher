@@ -17,4 +17,4 @@ git push --tags
 # export CPPFLAGS="-I/usr/local/Cellar/openssl@1.1/1.1.1t/include"
 
 pod cache clean ${NAME}
-pod repo push hsxorg *.podspec --use-libraries --allow-warnings --skip-import-validation --sources='https://github.com/longzl/PodSpec.git,https://github.com/CocoaPods/Specs.git'
+pod repo push hsxorg *.podspec --use-libraries --verbose --allow-warnings --skip-import-validation --sources='https://github.com/longzl/PodSpec.git,https://github.com/CocoaPods/Specs.git'
