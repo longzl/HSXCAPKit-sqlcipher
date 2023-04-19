@@ -48,6 +48,8 @@ $ ./configure --enable-tempstore=yes CFLAGS="-DSQLITE_HAS_CODEC" \
 $ make
 ```
 
+./configure --enable-tempstore=yes CFLAGS="-DSQLITE_HAS_CODEC" LDFLAGS="-L/Users/longzl/code/git/Build-OpenSSL-cURL/archive/libcurl-7.84.0-openssl-1.1.1p-nghttp2-NONE/lib/MacOS" CFLAGS="-I/Users/longzl/code/git/Build-OpenSSL-cURL/archive/libcurl-7.84.0-openssl-1.1.1p-nghttp2-NONE/include"
+
 Example 2. Dynamic linking
 
 ```

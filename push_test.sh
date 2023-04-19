@@ -1,4 +1,4 @@
-VERSION="v0.1.1"
+VERSION="v0.1.2"
 NAME="HSXCAPKit-sqlcipher"
 export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
 git add .
@@ -14,7 +14,8 @@ git push --tags
 
 # export PATH=/usr/local/Cellar/openssl@1.1/1.1.1t/bin:$PATH
 # export LDFLAGS="-L/usr/local/Cellar/openssl@1.1/1.1.1t/lib"
+# export CFLAGS="-I/usr/local/Cellar/openssl@1.1/1.1.1t/include"
 # export CPPFLAGS="-I/usr/local/Cellar/openssl@1.1/1.1.1t/include"
 
 pod cache clean ${NAME}
-pod repo push hsxorg *.podspec --use-libraries --verbose --allow-warnings --skip-import-validation --sources='https://github.com/longzl/PodSpec.git,https://github.com/CocoaPods/Specs.git'
+pod repo push hsxorg *.podspec --use-libraries --verbose --allow-warnings --sources='https://github.com/longzl/PodSpec.git,https://github.com/CocoaPods/Specs.git'
