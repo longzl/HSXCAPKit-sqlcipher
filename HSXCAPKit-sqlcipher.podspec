@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "HSXCAPKit-sqlcipher"
-  s.version      = "0.1.1"
+  s.version      = "0.1.3"
   s.summary      = "CAPKit-sqlcipher library."
   s.description  = <<-DESC
                    CAPKit-sqlcipher library desc.
